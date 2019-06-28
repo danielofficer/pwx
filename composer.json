@@ -2,6 +2,11 @@
     "name": "michaelthessel/pwx",
     "description": "Online password exchange service",
     "license": "MIT",
+    "config": {
+        "platform": {
+            "php": "7.0"
+        }
+    },
     "require": {
         "silex/silex": "~1.2",
         "aptoma/silex-extras": "~1.2",

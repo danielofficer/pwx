@@ -11,13 +11,14 @@
         #}
         <input style="display:none" type="text" name="fakeusernameremembered"/>
         <input style="display:none" type="password" name="fakepasswordremembered"/>
+        <p>Either a password, data/notes or both is required.  Please warn the recipient that this data will be deleted, so they should make a note of the data and not rely on this link being available in the future</p>
         <div class="form-group">
           <label for="userName">{{ 'app.data.username'|trans }}</label>
           <input type="text" class="form-control" id="userName" name="userName" placeholder="{{ 'app.data.username'|trans }}" maxlength="255" autocomplete="off" tabindex="1" autofocus>
         </div>
         <div class="form-group">
           <label for="password">{{ 'app.data.password'|trans }}</label>
-          <input type="password" class="form-control" id="password" name="password" placeholder="{{ 'app.data.password'|trans }}" required="required" maxlength="255" autocomplete="off" tabindex="2">
+          <input type="password" class="form-control" id="password" name="password" placeholder="{{ 'app.data.password'|trans }}" maxlength="255" autocomplete="off" tabindex="2">
           <div class="insert-password">
             <div>
               {{ 'index.insert_password_start'|trans }}
@@ -47,6 +48,7 @@
               <option value="2592000">1 {{ 'app.data.month'|trans }}</option>
             </select>
         </div>
+        <!-- Commented out for the moment since tests with it showed the link occasionally just showing as expired.  I think people were clicking too hard
         <div class="form-group">
           <div class="checkbox">
             <label for="oneTimeView">
@@ -54,6 +56,7 @@
             </label>
           </div>
         </div>
+        -->
         <button type="submit" class="btn btn-default" tabindex="6">{{ 'index.generate_link'|trans }}</button>
       </form>
     </div>

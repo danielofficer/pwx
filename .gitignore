@@ -1,3 +1,5 @@
 cache
 app/config.php
 .idea
+.htpasswd
+vendor

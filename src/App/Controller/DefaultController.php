@@ -52,10 +52,11 @@ class DefaultController
      */
     public function indexPostAction(Request $request)
     {
-        // Exit if we got no password
+        // Exit if we got no password or comment
         $password = $request->get('password');
-        if (empty($password)) {
-            return $this->app->redirect('/');
+        $comment = $request->get('comment');
+        if (empty($password) && empty($comment)) {
+            return $this->app->redirect('/?err=1');
         }
 
         $credentials = $this->saveCredentials($request);

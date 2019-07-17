@@ -4,9 +4,9 @@ app.name: Password Exchange
 app.meta.description: Online password exchange service
 app.meta.keywords: Password, Exchange, Online, Credentials, Transfer, Email
 
-app.data.username: User Name
+app.data.username: Username
 app.data.password: Password
-app.data.comment: Comment
+app.data.comment: Data / Notes
 app.data.expires: Valid for
 app.data.onetimeview: Delete record after it has been viewed
 app.data.seconds: seconds
